@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script> -->
+    <link rel="stylesheet" href="static/style.css"/>
+    <script type="text/javascript" src="static/index.js"></script>
+</head>
+<body>
+    <h1 data-text="We Are Ready to Calculate Hypotenuse">We Are Ready to Calculate Hypotenuse</h1>
+    <form>
+        <input type="number" id="number1"/>
+        <input type="number" id="number2"/>
+        <input type="button" id="btnClick" onclick="hypotenuse()" value="Calculate Hypotenuse"/>
+    </form>
+
+    <div id="result"></div>
+
+    <ul>
+        <li>
+            <a href="/convertLetter"><span title="Convert to Letter">Convert to Letter</span></a>
+            <a href="/squareRoot"><span title="Square Root">Square Root</span></a>
+        </li>
+    </ul>
+
+</body>
+</html>
